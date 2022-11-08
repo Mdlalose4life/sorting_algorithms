@@ -1,6 +1,7 @@
 #include "sort.h"
 /**
  * swap - swaps the nodes of a doubly linked list.
+ * @head: The head of the list to be swapped.
  * @node1: first node to be swapped.
  * @node2: sirst node to be swapped.
  * Return: void
@@ -28,7 +29,7 @@ void swap(listint_t **head, listint_t **node1, listint_t *node2)
 void insertion_sort_list(listint_t **list)
 {
 listint_t *trev, *put, *temp;
-	if (list == NULL || *list == NULL||(*list)->next == NULL)
+	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
 	for (trev = (*list)->next; trev != NULL; trev = temp)
 	{
