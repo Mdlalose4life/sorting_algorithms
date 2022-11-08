@@ -21,13 +21,14 @@ temp = *xp;
  */
 void bubble_sort(int *array, size_t size)
 {
-size_t j, pos;
+size_t len, j, pos;
 if (array == NULL || size < 2)
 	return;
-while (size > 0)
+len = size;
+while (len > 0)
 {
 	pos = 0;
-	for (j = 0; j < size - 1; j++)
+	for (j = 0; j < len - 1; j++)
 	{
 		if (array[j] > array[j + 1])
 		{
@@ -37,5 +38,5 @@ while (size > 0)
 		}
 	}
 }
-size = pos;
+len = pos;
 }
