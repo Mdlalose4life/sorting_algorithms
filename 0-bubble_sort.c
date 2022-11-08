@@ -37,6 +37,6 @@ while (len > 0)
 			print_array(array, size);
 		}
 	}
+	len = pos;
 }
-len = pos;
 }
