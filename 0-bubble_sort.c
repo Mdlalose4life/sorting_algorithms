@@ -5,7 +5,7 @@
  * @yp: second value to be swapped
  * Return: Always 0.
  */
-void swap(int *xp, int *yp)
+void swap_var(int *xp, int *yp)
 {
 int temp;
 temp = *xp;
@@ -32,7 +32,7 @@ while (len > 0)
 	{
 		if (array[j] > array[j + 1])
 		{
-			swap(&array[j], &array[j + 1]);
+			swap_var(&array[j], &array[j + 1]);
 			pos = j + 1;
 			print_array(array, size);
 		}
