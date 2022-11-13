@@ -29,6 +29,7 @@ void selection_sort(int *array, size_t size);
 void swap_num(int *xp, int *yp);
 void quick_sort(int *array, size_t size);
 void shell_sort(int *array, size_t size);
+void heap_sort(int *array, size_t size);
 
 #endif
 
