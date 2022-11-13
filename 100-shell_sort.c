@@ -30,7 +30,7 @@ for (; gap >= 1; gap /= 3)
 {
 	for (i = gap; i < size; i++)
 	{
-		for (j = i; gap && array[j - gap] > array[j]; j -= gap)
+		for (j = i; j >= gap && array[j - gap] > array[j]; j -= gap)
 		{
 			swap_shell(array + j, array + (j - gap));
 		}
