@@ -3,7 +3,7 @@
  * swap_shell - Swaps the two elements recieved.
  * @a: first element to be swapped.
  * @b: Second element to be swapped.
- * Return: Always 0.
+ * Return: Always 0
  */
 void swap_shell(int *a, int *b)
 {
